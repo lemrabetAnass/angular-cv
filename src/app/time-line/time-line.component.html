@@ -1,0 +1,24 @@
+<div class="light-background" style="position: relative;">
+    <div class="dot"></div>
+    <div class="vertical-line"></div>
+    <div class="content">
+        <div class="date-style"><span>{{ data.startDate | date: 'MM/yyyy'}} - {{ data.endDate | date: 'MM/yyyy'}}</span></div>
+        
+        <h3 *ngIf="data.type==='work'" style="margin-bottom: 0px;">{{ data.roleName }}</h3>
+        <h3 *ngIf="data.type==='study'" style="margin-bottom: 0px;">{{ data.name }}</h3>
+        
+        <h4 *ngIf="data.type==='work'" class="local-style">{{ data.companyName }} {{ data.companyAddress }}</h4>
+        <h4 *ngIf="data.type==='study'" class="local-style">{{ data.universityName }} {{ data.universityAddress }}</h4>
+
+        <div *ngIf="data.type==='work'">
+            <div *ngFor="let project of data.projects">
+                <span class="project-title">{{ project.name }}:</span>
+                <span> {{ project.description }}</span><br>
+                <span class="project-title">Missions:</span> <br>
+                <ul>
+                    <li *ngFor="let mission of project.missions">{{ mission }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

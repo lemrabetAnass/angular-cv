@@ -8,3 +8,8 @@ body {
     border-radius: 10rem;
     padding: 10px;
 }
+
+
+.light-background {
+    background-color: #ffffff;
+}

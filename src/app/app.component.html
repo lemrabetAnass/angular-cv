@@ -1,7 +1,28 @@
 <router-outlet></router-outlet>
-<div class="container" style="display: flex;">
+
+<div class="container" >
   <div class="contact-info margin-rl">
-    <app-contact-info></app-contact-info>
+    <app-contact-info [data]="data"></app-contact-info>
   </div>
-  <div class="other-info margin-rl"></div>
+  <div class="other-info margin-rl ">
+    <div style="width: 100%;border-radius: 1em;" class="light-background">
+      <p style="padding: 5px 18px" [innerHTML]="data.bio"></p>
+    </div>
+
+    <div class="light-background" style="width: 100%; display: flex; flex-wrap: wrap;border-radius: 1em;">
+      <div class="time-line-section">
+        <div style="padding: 0 15px;">
+          <h2>Experiences:</h2>
+          <app-time-line *ngFor="let experience of data.experiences" [data]="experience"></app-time-line>
+        </div>
+      </div>
+      <div class="time-line-section">
+        <div style="padding: 0 15px;">
+          <h2>Education:</h2>
+          <app-time-line *ngFor="let education of data.educations" [data]="education"></app-time-line>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

@@ -1,10 +1,10 @@
 <div class="container-info">
     <div class="image-container">
         <img class="rounded" src="../../assets/images/anass_img.jpeg" alt="">
-        <h3 class="name-style">LEMRABET Anass</h3>
+        <h3 class="name-style">{{data.lastName?.toUpperCase()}} {{ data.firstName?.charAt(0).toUpperCase() + data.firstName?.slice(1).toLowerCase() }}</h3>
     </div>
     <div>
-        <h4 class="badge-pill light-background">Full Stack Developer Java / Spring Boot / Angular / Vuejs</h4>
+        <h4 class="badge-pill light-background">{{ data.profile }}</h4>
     </div>
     <div style="display:flex;justify-content: space-evenly;">
         <a href="https://www.linkedin.com/in/anass-lemrabet-512a68113/" class="fa-brands fa-linkedin badge-pill light-background link-color"></a>
@@ -14,30 +14,26 @@
         <h4>Personal information :</h4>
         <div>
             <div>
-                <i class="fa-solid fa-location-dot"></i><span> Kénitra, Maroc</span>
+                <i class="fa-solid fa-location-dot"></i><span> {{ data.address }}</span>
             </div>
             <div>
-                <i class="fa-solid fa-envelope"></i><span> lemrabet.anass@gmail.com</span>
+                <i class="fa-solid fa-envelope"></i><span> {{ data.email }}</span>
             </div>
             <div>
-                <i class="fa-solid fa-mobile"></i><span> +212 634321874</span>
+                <i class="fa-solid fa-mobile"></i><span> {{ data.phone }}</span>
             </div>
         </div>
     </div>
     <div class="language-container light-background">
         <h4 class="name-style">Langues :</h4>
         <div class="language-style"> 
-            <span>Arabe: </span>
-            <span>Français: </span>
-            <span>Anglais: </span>
+            <span *ngFor="let language of data.languages">{{ language.name }}: {{ language.level }}</span>
         </div>
     </div>
     <div class="language-container light-background">
         <h4 class="name-style">Forces :</h4>
         <div class="language-style"> 
-            <span>Motivé</span>
-            <span>Curieux</span>
-            <span>Passioné</span>
+            <span *ngFor="let item of data.softSkills">{{ item }}</span>
         </div>
     </div>
 </div>

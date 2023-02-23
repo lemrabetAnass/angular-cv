@@ -1,0 +1,11 @@
+identifier: lde1hfcb5362medd
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: angular-cv
+homeFolder: /home/anasslemrabet/IdeaProjects/angular-cv/angular-cv
+distFolder: ./dist/angular-cv
+outDir: /home/anasslemrabet/IdeaProjects/angular-cv/angular-cv/dist/static
+handle404: ''
+allowErrorCollect: false

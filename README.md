@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Static version of the cv with scully
+
+to generate the static version, here are the steps.
+
+run `ng build` to build the project.
+
+run `npx scully` to generate static version, files are generated in dist/static.
+
+run `npx scully serve` to serve the static version.

@@ -1,6 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import {ContactInfoComponent} from "./contact-info/contact-info.component";
+import {TimeLineComponent} from "./time-line/time-line.component";
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,7 +11,9 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        ContactInfoComponent,
+        TimeLineComponent
       ],
     }).compileComponents();
   });
@@ -30,6 +34,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-cv app is running!');
+    expect(compiled.querySelector('.contact-info .container-info h3')?.textContent).toContain('LEMRABET Anass');
   });
 });

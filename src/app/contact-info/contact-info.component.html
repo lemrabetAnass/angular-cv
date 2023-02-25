@@ -7,8 +7,8 @@
         <h4 class="badge-pill light-background">{{ data.profile }}</h4>
     </div>
     <div style="display:flex;justify-content: space-evenly;">
-        <a href="https://www.linkedin.com/in/anass-lemrabet-512a68113/" class="fa-brands fa-linkedin badge-pill light-background link-color"></a>
-        <a href="https://github.com/lemrabetAnass" class="fa-brands fa-github badge-pill light-background link-color"></a>
+        <a [href]="data.linkedinLink" target="_blank" class="fa-brands fa-linkedin badge-pill light-background link-color"></a>
+        <a [href]="data.githubLink" target="_blank" class="fa-brands fa-github badge-pill light-background link-color"></a>
     </div>
     <div>
         <h4>Personal information :</h4>
@@ -26,13 +26,13 @@
     </div>
     <div class="language-container light-background">
         <h4 class="name-style">Langues :</h4>
-        <div class="language-style"> 
+        <div class="language-style">
             <span *ngFor="let language of data.languages">{{ language.name }}: {{ language.level }}</span>
         </div>
     </div>
     <div class="language-container light-background">
         <h4 class="name-style">Forces :</h4>
-        <div class="language-style"> 
+        <div class="language-style">
             <span *ngFor="let item of data.softSkills">{{ item }}</span>
         </div>
     </div>

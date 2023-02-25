@@ -11,19 +11,21 @@ export class AppComponent {
     firstName: 'Anass',
     lastName: 'LEMRABET',
     profile: 'Full Stack Developer Java / Spring Boot / Angular / Vuejs',
-    bio: `Je suis développeur Full Stack avec une expertise en Spring Boot et Angular. 
-    j'ai quatre ans de d'expérience dans l'industrie du développement de logiciels, 
+    bio: `Je suis développeur Full Stack avec une expertise en Spring Boot et Angular.
+    j'ai quatre ans de d'expérience dans l'industrie du développement de logiciels,
     travaillant sur plusieurs projets dans divers domaines tels que finance, santé. <br>
-    Mes compétences techniques comprennent la maitrise de Java, Spring Boot, Angular, 
+    Mes compétences techniques comprennent la maitrise de Java, Spring Boot, Angular,
     VueJs HTML/CSS, Javascript, Les API REST, MySQL, PostgreSQL. <br>
-    J'ai de l'experience dans le développement d'applications Web de bout en bout et 
+    J'ai de l'experience dans le développement d'applications Web de bout en bout et
     d'API RESTful à l'aide de Spring Boot et d'Angular. `,
     email: 'lemrabet.anass@gmail.com',
+    githubLink: 'https://github.com/lemrabetAnass',
+    linkedinLink: 'https://www.linkedin.com/in/anass-lemrabet-512a68113/',
     address: 'Kénitra, Maroc',
     phone: '+212 634321874',
     languages: [
-      {name: 'Arabe', level : 'maternelle'}, 
-      {name: 'Français', level: 'courant'}, 
+      {name: 'Arabe', level : 'maternelle'},
+      {name: 'Français', level: 'courant'},
       {name: 'Anglais', level: 'courant'}
     ],
     softSkills: [
@@ -95,7 +97,7 @@ export class AppComponent {
               'Tests unitaires, tests d’intégrations avec Junit et tests e2e.'
             ],
             technologies: [
-              'Microservice Architecture', 'Java', 'JHipster', 'Spring Boot', 'RestFul API', 
+              'Microservice Architecture', 'Java', 'JHipster', 'Spring Boot', 'RestFul API',
               'RxJs', 'PrimeNg', 'SQL', 'Inegration Tests', 'E2e Tests'
             ]
           }

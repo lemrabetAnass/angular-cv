@@ -35,3 +35,10 @@ run `ng build` to build the project.
 run `npx scully` to generate static version, files are generated in dist/static.
 
 run `npx scully serve` to serve the static version.
+
+## Build and Deployement
+The build is done through a pipeline defined in .github/workflows/build-and-deploy.yml.
+[pipeline](.github/workflows/build-and-deploy.yml).
+
+After building the project and successfully running the tests, the files are deployed to 
+GitHub Pages and published at this [link](https://lemrabetanass.github.io/angular-cv/).
